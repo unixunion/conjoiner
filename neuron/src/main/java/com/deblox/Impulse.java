@@ -1,6 +1,7 @@
 package com.deblox;
 
-
+import static com.deblox.Serializer.objectToJson;
+import static com.deblox.Serializer.jsonToObject;
 import org.vertx.java.core.json.JsonObject;
 import java.util.Date;
 import com.deblox.Util;
@@ -81,6 +82,14 @@ public class Impulse
 
     public String getMsgBody() {
         return this.msgBody;
+    }
+
+    public String toJson() {
+        return (String)objectToJson(this);
+    }
+
+    public Impulse toImpulse(String json) {
+        return (Impulse)jsonToObject(json);
     }
 
 }

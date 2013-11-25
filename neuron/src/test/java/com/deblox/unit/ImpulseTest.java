@@ -61,4 +61,17 @@ public class ImpulseTest extends TestCase {
         impulse.setMsgBody("Fuul!");
         assertEquals(impulse.getMsgBody(), "Fuul!");
     }
+
+    // Test creating a json version of an impulse class object
+    public void testToJson() {
+        String impulse_json = new com.deblox.Impulse("HEARTBEAT").setMsgBody("ff").toJson();
+        assertNotNull(impulse_json);
+    }
+
+    // Test creating a json representation of the impulse object and converting it back to Impulse class
+    public void testToImpulse() {
+        String impulse_json = new Impulse("HEARTBEAT").setMsgBody("ff").toJson();
+        Impulse new_impulse = new Impulse().toImpulse(impulse_json);
+        assertEquals(new_impulse.getMsgBody(), "ff");
+    }
 }
