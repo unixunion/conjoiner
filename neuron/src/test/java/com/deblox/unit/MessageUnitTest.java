@@ -24,12 +24,15 @@ public class MessageUnitTest {
     public void testSeriaizeImpulse2() {
         String impulse_serialized = objectToJson( new com.deblox.Impulse("HEARTBEAT"));
         logger.info(impulse_serialized);
+
     }
 
     @Test
     public void testDeserializeImpulse() {
-        String impulse_serialized = "{\"com.deblox.Impulse\":{\"srcHost\":\"STHMACLT009.local\",\"timestamp\":1380197332986}}";
+        String impulse_serialized = objectToJson( new com.deblox.Impulse("HEARTBEAT"));
+        //String impulse_serialized = "{\"com.deblox.Impulse\":{\"srcHost\":\"STHMACLT009.local\",\"timestamp\":1380197332986}}";
         com.deblox.Impulse impulse = (Impulse)jsonToObject(impulse_serialized);
+        
         logger.info(impulse.getSrcHost());
     }
 }

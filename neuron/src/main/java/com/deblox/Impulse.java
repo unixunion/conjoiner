@@ -49,8 +49,9 @@ public class Impulse
     }
 
     // dstHost
-    public void setDstHost(String dstHost) {
+    public Impulse setDstHost(String dstHost) {
         this.dstHost = dstHost;
+        return this;
     }
 
     public String getDstHost() {
@@ -63,8 +64,9 @@ public class Impulse
     }
 
     // msgType
-    public void setMsgType(String msgType) {
+    public Impulse setMsgType(String msgType) {
         this.msgType = msgType;
+        return this;
     }
 
     public String getMsgType() {
@@ -72,8 +74,9 @@ public class Impulse
     }
 
     // msgBody
-    public void setMsgBody(String msgBody) {
+    public Impulse setMsgBody(String msgBody) {
         this.msgBody = msgBody;
+        return this;
     }
 
     public String getMsgBody() {
