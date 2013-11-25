@@ -1,0 +1,5 @@
+{
+    "neuron_conf": {
+        "BROADCAST": "NEURON_BCAST"
+    }
+}
