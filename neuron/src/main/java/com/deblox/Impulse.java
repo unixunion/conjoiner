@@ -31,63 +31,71 @@ public class Impulse
     @XStreamAsAttribute
     private String msgBody;
 
+    // Default to unknown message type
     public Impulse() {
         this.msgType = "Unknown";
     }
 
+    // New instance with type string eg: HEARTBEAT / DEPLOY / DIE
     public Impulse(String msgType) {
         this.msgType = msgType;
     }
 
+    // New instance with type and body
     public Impulse(String msgType, String msgBody) {
         this.msgType = msgType;
         this.msgBody = msgBody;
     }
 
-    // srcHost
+    // get the SrcHost of a message
     public String getSrcHost() {
         return this.srcHost;
     }
 
-    // dstHost
+    // set the DstHost of the message, return the Impulse instance
     public Impulse setDstHost(String dstHost) {
         this.dstHost = dstHost;
         return this;
     }
 
+    // get the DstHost of a message
     public String getDstHost() {
         return this.dstHost;
     }
 
-    // timestmap
+    // get the message creation time
     public long getTimestamp() {
         return this.timestamp;
     }
 
-    // msgType
+    // set message type to something eg; HEARTBEAT / DIE / DEPLOY
     public Impulse setMsgType(String msgType) {
         this.msgType = msgType;
         return this;
     }
 
+    // return the message type string ( perhaps rework this to something like Impulse.HEARTBET
     public String getMsgType() {
         return this.msgType;
     }
 
-    // msgBody
+    // set msgBody to something
     public Impulse setMsgBody(String msgBody) {
         this.msgBody = msgBody;
         return this;
     }
 
+    // get the message body
     public String getMsgBody() {
         return this.msgBody;
     }
 
+    // return a json representation of this instance.
     public String toJson() {
-        return (String)objectToJson(this);
+        return objectToJson(this);
     }
 
+    // Return a Impulse object of a json string.
     public Impulse toImpulse(String json) {
         return (Impulse)jsonToObject(json);
     }
