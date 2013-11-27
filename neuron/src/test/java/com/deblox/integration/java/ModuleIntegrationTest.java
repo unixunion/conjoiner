@@ -17,6 +17,8 @@ package com.deblox.integration.java;
  * @author <a href="http://tfox.org">Tim Fox</a>
  */
 
+import com.deblox.Impulse;
+import com.deblox.MsgType;
 import org.junit.Test;
 import org.vertx.java.core.AsyncResult;
 import org.vertx.java.core.AsyncResultHandler;
@@ -42,10 +44,17 @@ public class ModuleIntegrationTest extends TestVerticle {
   @Test
   public void testPing() {
     container.logger().info("in testPing()");
-    vertx.eventBus().send("ping-address", "ping!", new Handler<Message<String>>() {
+      Impulse msg = new Impulse(MsgType.TEST).setHostname("Foo");
+
+      msg.setMsgBody("ping!");
+
+    vertx.eventBus().send("BROADCAST", msg.toJson(), new Handler<Message<String>>() {
       @Override
       public void handle(Message<String> reply) {
-        assertEquals("pong!", reply.body());
+        // Convert the reply message to Impulse instance
+        Impulse rmsg = new Impulse().toImpulse(reply.body());
+        // verify the expected pong in the Impulse instance body
+        assertEquals("pong!", rmsg.getMsgBody());
 
         /*
         If we get here, the test is complete

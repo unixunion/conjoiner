@@ -16,6 +16,7 @@ import org.vertx.java.core.logging.Logger;
  */
 
 
+
 public class Boot extends Verticle{
     Logger logger;
     JsonObject config;
@@ -24,15 +25,13 @@ public class Boot extends Verticle{
         logger = container.logger();
         logger.info("Booting...");
 
-        logger.info("Configuring...");
         // load neuron_conf from config file
         config = container.config();
         JsonObject neuronConfig = config.getObject("neuron_conf");
+        logger.info("Configuration read: " + neuronConfig);
 
         logger.info("Deploying com.deblox.Neuron...");
-        //container.deployVerticle("Neuron", neuronConfig);
-
-        container.deployVerticle("com.deblox.Neuron", new AsyncResultHandler<String>() {
+        container.deployVerticle("com.deblox.Neuron", neuronConfig ,new AsyncResultHandler<String>() {
             public void handle(AsyncResult<String> deployResult) {
                 if (deployResult.succeeded()) {
                     startedResult.setResult(null);

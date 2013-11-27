@@ -25,6 +25,9 @@ the quota system.
 
 You need to install vertx.io somewhere in your path ( bin at least ). Maven should take care of the compile time depencancies.
 
+place your config.json and cluster.json in your vertx conf dir, eg /opt/vertx-final/conf/
+
+
 # Building
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home mvn install
@@ -36,7 +39,7 @@ Generates: target/maglock-1.0-SNAPSHOT-mod.zip
 
 # run
 There are many ways to run a module, if its in your .m2 repo
-vertx runmod com.deblox~neuron~0.1
+vertx runmod com.deblox~neuron~0.1 -conf /some/conf.json -cluster
 
 If its exploded.
 vertx run Boot.java

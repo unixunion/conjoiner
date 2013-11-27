@@ -2,49 +2,76 @@ package com.deblox;
 
 import static com.deblox.Serializer.objectToJson;
 import static com.deblox.Serializer.jsonToObject;
-import org.vertx.java.core.json.JsonObject;
+
+import java.net.UnknownHostException;
 import java.util.Date;
-import com.deblox.Util;
+import java.util.logging.Logger;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
-import com.thoughtworks.xstream.annotations.XStreamImplicit;
+import sun.rmi.runtime.Log;
 
 /**
  * Created with IntelliJ IDEA.
  * User: keghol
  * Date: 9/25/13
  * Time: 12:56 PM
- * To change this template use File | Settings | File Templates.
+ *
+ * The Impulse object is the message instance generator which is used to create a message, pack it with payload
+ * and take care of serializing and de-serializing.
+ *
  */
 
 @XStreamAlias("impulse")
 public class Impulse
 {
+
     @XStreamAsAttribute
-    private String srcHost = new Util().getHostname();
+    private String srcHost;
     @XStreamAsAttribute
     private String dstHost;
     @XStreamAsAttribute
     private long timestamp = new Date().getTime();
     @XStreamAsAttribute
-    private String msgType; // HEARTBEAT, UPDATE_REQUEST, ...
+    private MsgType msgType; // HEARTBEAT, UPDATE_REQUEST, ...
     @XStreamAsAttribute
     private String msgBody;
 
+    public void setHostname() {
+        try {
+            setHostname(Util.getHostname());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+            setHostname("Unknown");
+        }
+    }
+
+    public Impulse setHostname(String hostname) {
+        if (hostname != null) {
+            srcHost = hostname;
+        } else {
+            setHostname();
+        }
+        return this;
+    }
+
     // Default to unknown message type
     public Impulse() {
-        this.msgType = "Unknown";
+        // DONT PUT ANYTHING IN HERE, FUCKS WITH THE DESERIALIZATION PROCESS EG:
+        // Impulse foo = Impulse().toImpulse(message.body());
     }
 
     // New instance with type string eg: HEARTBEAT / DEPLOY / DIE
-    public Impulse(String msgType) {
-        this.msgType = msgType;
+    public Impulse(MsgType msgType) {
+        //this.msgType = msgType;
+        this(msgType, null);
     }
 
     // New instance with type and body
-    public Impulse(String msgType, String msgBody) {
+    public Impulse(MsgType msgType, String msgBody) {
         this.msgType = msgType;
         this.msgBody = msgBody;
+        this.setHostname();
     }
 
     // get the SrcHost of a message
@@ -69,13 +96,13 @@ public class Impulse
     }
 
     // set message type to something eg; HEARTBEAT / DIE / DEPLOY
-    public Impulse setMsgType(String msgType) {
+    public Impulse setMsgType(MsgType msgType) {
         this.msgType = msgType;
         return this;
     }
 
     // return the message type string ( perhaps rework this to something like Impulse.HEARTBET
-    public String getMsgType() {
+    public MsgType getMsgType() {
         return this.msgType;
     }
 

@@ -7,6 +7,7 @@ import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 import com.deblox.Impulse;
 
 import java.io.Console;
+import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,16 +20,19 @@ import java.io.Console;
 
 public class Serializer {
     private static XStream xstream = new XStream(new JettisonMappedXmlDriver());
+    private static Logger logger = Logger.getLogger("Serializer");
 
     // Method that returns a json-ified version of a object
     public static String objectToJson(Object object) {
         //return new XStream(new JettisonMappedXmlDriver()).toXML(object);
+        logger.info("objectToJson: " + object);
         return xstream.toXML(object);
     }
 
 
     public static Object jsonToObject(String json) {
         //return new XStream(new JettisonMappedXmlDriver()).toXML(object);
+        logger.info("jsonToObject: " + json);
         return xstream.fromXML(json);
     }
 
@@ -41,12 +45,7 @@ public class Serializer {
 
         System.out.println("class: " + object.getClass());
         return null;
-//        return (object.getClass())object;
-//
-//        if (object instanceof Impulse) {
-//            Impulse impulse = (Impulse)object;
-//            return impulse;
-//        }
+
     }
 }
 

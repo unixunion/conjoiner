@@ -1,5 +1,6 @@
 {
     "neuron_conf": {
-        "BROADCAST": "NEURON_BCAST"
+        "BROADCAST": "NEURON_BCAST",
+        "HOSTNAME": "mcfluuglebinder"
     }
 }
