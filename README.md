@@ -36,6 +36,9 @@ Transponder would be the first module to be shipped and deployed by the "Deploye
 * Adding metadata to messages eg: hostname, timestamp, messagetype…
 * Heartbeat messages
 
+![Transponder](https://raw.github.com/unixunion/conjoiner/master/transponder.png?token=1773544__eyJzY29wZSI6IlJhd0Jsb2I6dW5peHVuaW9uL2NvbmpvaW5lci9tYXN0ZXIvdHJhbnNwb25kZXIucG5nIiwiZXhwaXJlcyI6MTM4NjM0MzY5M30%3D--557c82f2d83f37d3b0974bfde1b414814ecb169a)
+
+
 
 
 ### Monitor
