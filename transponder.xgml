@@ -210,6 +210,29 @@ Metadata</attribute>
 				<attribute key="model"/>
 			</section>
 		</section>
+		<section name="node">
+			<attribute key="id" type="int">9</attribute>
+			<attribute key="label" type="String"></attribute>
+			<section name="graphics">
+				<attribute key="x" type="double">464.4000000000002</attribute>
+				<attribute key="y" type="double">308.0</attribute>
+				<attribute key="w" type="double">76.48000000000002</attribute>
+				<attribute key="h" type="double">40.0</attribute>
+				<attribute key="customconfiguration" type="String">com.yworks.flowchart.process</attribute>
+				<attribute key="fill" type="String">#E8EEF7</attribute>
+				<attribute key="fill2" type="String">#B7C9E3</attribute>
+				<attribute key="outline" type="String">#000000</attribute>
+			</section>
+			<section name="LabelGraphics">
+			</section>
+			<section name="LabelGraphics">
+				<attribute key="text" type="String">Heartbeat 
+Timer</attribute>
+				<attribute key="fontSize" type="int">12</attribute>
+				<attribute key="fontName" type="String">Dialog</attribute>
+				<attribute key="model"/>
+			</section>
+		</section>
 		<section name="edge">
 			<attribute key="source" type="int">2</attribute>
 			<attribute key="target" type="int">1</attribute>
@@ -315,7 +338,7 @@ Metadata</attribute>
 					</section>
 					<section name="point">
 						<attribute key="x" type="double">469.8734944029851</attribute>
-						<attribute key="y" type="double">379.34125</attribute>
+						<attribute key="y" type="double">390.18605000000014</attribute>
 					</section>
 					<section name="point">
 						<attribute key="x" type="double">570.8800000000002</attribute>
@@ -326,8 +349,8 @@ Metadata</attribute>
 			<section name="edgeAnchor">
 				<attribute key="xSource" type="double">0.7262943097014894</attribute>
 				<attribute key="ySource" type="double">-0.008937499999998978</attribute>
-				<attribute key="xTarget" type="double">-0.2289295708955265</attribute>
-				<attribute key="yTarget" type="double">0.06706250000000011</attribute>
+				<attribute key="xTarget" type="double">-0.7948385198744833</attribute>
+				<attribute key="yTarget" type="double">0.6093025000000069</attribute>
 			</section>
 			<section name="LabelGraphics">
 				<attribute key="text" type="String">deserialize</attribute>
@@ -356,9 +379,10 @@ Metadata</attribute>
 				<attribute key="targetArrow" type="String">white_delta</attribute>
 			</section>
 			<section name="edgeAnchor">
-				<attribute key="xSource" type="double">0.3083838619402955</attribute>
-				<attribute key="xTarget" type="double">-0.6903026337646365</attribute>
-				<attribute key="yTarget" type="double">0.23330250000000774</attribute>
+				<attribute key="xSource" type="double">-0.8246502353556514</attribute>
+				<attribute key="ySource" type="double">-0.3986974999999887</attribute>
+				<attribute key="xTarget" type="double">-0.8954990528060622</attribute>
+				<attribute key="yTarget" type="double">0.13730250000000838</attribute>
 			</section>
 			<section name="LabelGraphics">
 			</section>
@@ -531,6 +555,57 @@ Metadata</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
 				<attribute key="position"/>
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">9</attribute>
+			<attribute key="target" type="int">6</attribute>
+			<section name="graphics">
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="sourceArrow" type="String">white_delta</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+				<section name="Line">
+					<section name="point">
+						<attribute key="x" type="double">464.4000000000002</attribute>
+						<attribute key="y" type="double">308.0</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">464.4000000000002</attribute>
+						<attribute key="y" type="double">361.3860500000002</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">570.8800000000002</attribute>
+						<attribute key="y" type="double">378.0</attribute>
+					</section>
+				</section>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xTarget" type="double">-0.8785205282426852</attribute>
+				<attribute key="yTarget" type="double">-0.8306974999999909</attribute>
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">9</attribute>
+			<attribute key="target" type="int">2</attribute>
+			<attribute key="label" type="String"></attribute>
+			<section name="graphics">
+				<attribute key="customconfiguration" type="String">com.yworks.bpmn.Connection</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">com.yworks.bpmn.type</attribute>
+						<attribute key="valueClass" type="String">B.A.B.A.A.b</attribute>
+						<attribute key="value" type="String">CONNECTION_TYPE_MESSAGE_FLOW</attribute>
+					</section>
+				</section>
+				<attribute key="style" type="String">dashed</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="sourceArrow" type="String">transparent_circle</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xTarget" type="double">-0.6405399005446358</attribute>
+			</section>
+			<section name="LabelGraphics">
 			</section>
 		</section>
 	</section>
