@@ -6,7 +6,7 @@ import org.vertx.java.core.eventbus.Message;
 import org.vertx.java.core.json.JsonObject;
 import org.vertx.java.core.logging.Logger;
 import org.vertx.java.platform.Verticle;
-import static com.deblox.Serializer.objectToJson;
+
 import java.net.UnknownHostException;
 
 /*
@@ -19,9 +19,13 @@ public class Neuron extends Verticle {
     Logger logger;
     String TOPIC_BROADCAST;
     String HOSTNAME;
-    String IDENTIFIER;
+//    String IDENTIFIER;
     MessageHandler handleMessage;
-    Handler broadcastHandler;
+//    Handler broadcastHandler;
+
+
+    // Define the periodic handler
+    PeriodicHandler periodicHandler;
 
     private void config() {
         logger.info("Configuring Neuron");
@@ -65,6 +69,8 @@ public class Neuron extends Verticle {
 
         eb.registerHandler(config.getString("TOPIC_BROADCAST"), broadcastHandler);
 
+        eb.registerHandler(config.getString("HOSTNAME"), broadcastHandler);
+
 
 //        vertx.eventBus().registerHandler(TOPIC_BROADCAST,
 //                new Handler<Message<String>>() {
@@ -81,6 +87,9 @@ public class Neuron extends Verticle {
 //        };
 
 
+        //
+
+
         Handler<Message> heartbeat = new Handler<Message>() {
             @Override
             public void handle(Message message) {
@@ -91,24 +100,18 @@ public class Neuron extends Verticle {
 
 
         // HEARTBEAT message
-        vertx.setPeriodic(1000, new Handler<Long>() {
-            @Override
-            public void handle(Long timerID) {
-                vertx.eventBus().send(config.getString("TOPIC_BROADCAST"),
-                        new Impulse(MsgType.HEARTBEAT).setHostname(HOSTNAME).toJson(),
-                        new Handler<Message<String>>() {
-                            @Override
-                            public void handle(Message<String> reply) {
-                                logger.info("Received reply to my HEARTBEAT: " + reply.body());
-                                handleMessage.handleMessage(reply, config);
-                            }
-                        }
-                );
-            }
-        });
+        vertx.setPeriodic(3000, new PeriodicHandler(new Impulse(MsgType.HEARTBEAT).setHostname(HOSTNAME).toJson(), vertx, config, bcast));
+
+
+        // HEARTBEAT message
+        vertx.setPeriodic(3000, new PeriodicHandler(new Impulse(MsgType.HEARTBEAT).setHostname(HOSTNAME).toJson(), this));
+
+
+
 
         container.logger().info("com.deblox.Neuron started");
     }
+
 
 
 }

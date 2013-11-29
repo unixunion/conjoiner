@@ -4,7 +4,6 @@ import org.vertx.java.core.eventbus.Message;
 import org.vertx.java.core.json.JsonObject;
 
 import java.util.logging.Logger;
-import static com.deblox.Serializer.objectToJson;
 
 /**
  * Created with IntelliJ IDEA.
@@ -34,8 +33,9 @@ public class MessageHandler {
             Impulse rimsg = new Impulse(MsgType.TEST).setMsgBody("pong!").setHostname(config.getString("HOSTNAME"));
             message.reply(rimsg.toJson());
         } else {
+            if (message.ad)
             // Determine that the message is not from myself, cause that makes me look crazy.
-            if (imsg.getSrcHost().equals(config.getString("HOSTNAME"))) {
+            else if (imsg.getSrcHost().equals(config.getString("HOSTNAME"))) {
                 logger.info("Ignoring message from myself");
             } else {
                 logger.info("Responding to message");

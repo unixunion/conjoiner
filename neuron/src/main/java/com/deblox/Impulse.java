@@ -1,15 +1,13 @@
 package com.deblox;
 
-import static com.deblox.Serializer.objectToJson;
-import static com.deblox.Serializer.jsonToObject;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
 import java.net.UnknownHostException;
 import java.util.Date;
-import java.util.logging.Logger;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
-import sun.rmi.runtime.Log;
+import static com.deblox.Serializer.jsonToObject;
+import static com.deblox.Serializer.objectToJson;
 
 /**
  * Created with IntelliJ IDEA.

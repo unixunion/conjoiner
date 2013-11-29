@@ -2,5 +2,12 @@
     "neuron_conf": {
         "BROADCAST": "NEURON_BCAST",
         "HOSTNAME": "mcfluuglebinder"
+    },
+
+    "webserver_conf": {
+        "host": "0.0.0.0",
+        "port": 8080,
+        "web_root": "webroot"
     }
 }
+

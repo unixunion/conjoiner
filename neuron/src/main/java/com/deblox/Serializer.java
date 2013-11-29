@@ -1,13 +1,11 @@
 package com.deblox;
 
 import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
-//import com.thoughtworks.xstream.io.xml.DomDriver;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
-import com.deblox.Impulse;
 
-import java.io.Console;
 import java.util.logging.Logger;
+
+//import com.thoughtworks.xstream.io.xml.DomDriver;
 
 /**
  * Created with IntelliJ IDEA.
