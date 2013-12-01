@@ -5,7 +5,7 @@ Conjoiner
 Conjoiner is intended to be a truely distributed management network for large sets of hosts. There are no central management servers or messaging servers. All nodes are equal.
 
 ## Schematic
-![Conjoiner]()
+![Conjoiner](https://raw.github.com/unixunion/conjoiner/master/Conjoiner.png?token=1773544__eyJzY29wZSI6IlJhd0Jsb2I6dW5peHVuaW9uL2NvbmpvaW5lci9tYXN0ZXIvQ29uam9pbmVyLnBuZyIsImV4cGlyZXMiOjEzODY1MjEwODl9--d12cdd93a89659ca1d3c90c684da1cc85ca85ed5)
 
 ## Core Features
 * Distributed message driven architecture
