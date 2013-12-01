@@ -44,7 +44,7 @@ Transponder would be the first module to be shipped and deployed by the "Deploye
 
 
 ### Monitor
-A Monitoring module should post occasional requests as to the status of various modules on the ModBus and then notify Transponder to notify the EventBus of the status's 
+A Monitoring module should post occasional requests as to the status of various modules on the ModBus and then notify Transponder to notify the EventBus of the status's
 
 
 
