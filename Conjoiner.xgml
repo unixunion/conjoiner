@@ -247,7 +247,9 @@ Deployer</attribute>
 			<section name="LabelGraphics">
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Deployer</attribute>
+				<attribute key="text" type="String">Conjoiner 
+Module 
+Deployer</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
