@@ -1,27 +1,39 @@
-conjoiner
+Conjoiner
 =========
+"To join or become joined together; unite."
 
-conjoiner, a distributed management network
+Conjoiner is intended to be a truely distributed management network for large sets of hosts. There are no central management servers or messaging servers. All nodes are equal.
 
-## Components
-Conjoiner is a collection of vertx modules and verticals to achieve true distributed host management where all nodes are truely equal. 
+## Schematic
+![Conjoiner]()
 
-## Features
+## Core Features
 * Distributed message driven architecture
 * Standardized message payloads
 * Deployment of new modules via message events
-* Control of modules via message events
+* Passing messages between local mods and verticals within the instance and the cluster.
+
+## Glossary
+#### local-ModBus
+The local servers "internal" messaging bus, this is actually on the cluster but the addressing schema is only known by the local machine and is something down the line of: myserver.mydomain.com.local 
+#### ClusterBus
+The shared messaging network with the entire cluster. The topic name is known to ALL instances on all servers. eg: "conjoiner.clusterbus"
+
+
+## Components
+Conjoiner is a grouping of some core modules, these modules are interacted with via messaging. The core of Conjoiner provides messaging capabilities to the Cluster and the ability to deploy new code and attach that code to the Cluster though indirectly via the "transponder". See transponder below.
+
 
 ## Modules
 ### Deployer
-Deployer is a core feature of Conjoiner, It should be a simple vertx application which should subscribe to both the shared eventbus and the local modbus. New deployment messages are received on the eventbus, and after determining if the message recipieint is this node, the deployment task is performed. This could include:
+The Deployer is a core feature of Conjoiner, It should be a simple module which should subscribe to both the ClusterBus and the local-ModBus. Deploy / Undeploy messages are received on the ClusterBus, and after determining if the message is intended for this node, the deployment task is performed. This could include:
 
-* Download of mod package.
-* Creation of the mods/MODULENAME/mod.json manifest
-* Creation of the module initial config object
-* Deployment of the module with initial config
-* Posting result back to EventBus
-* Posting result to local modules on ModBus
+* Download of mod package from nexus
+* Creation of the mods/MODULENAME/mod.json manifest within conjoiner
+* Creation of the module's initial config object
+* Deployment of the module with its initial config
+* Publishing Deploy/Undeploy result back to ClusterBus
+* Notifying local modules on local-ModBus of the deployment change
 
 ![Deployer](https://raw.github.com/unixunion/conjoiner/master/deployer.png?token=1773544__eyJzY29wZSI6IlJhd0Jsb2I6dW5peHVuaW9uL2NvbmpvaW5lci9tYXN0ZXIvZGVwbG95ZXIucG5nIiwiZXhwaXJlcyI6MTM4NjM0MjA0MX0%3D--2ef3f00f924da76e9ec7a1f9a16b4e37f96e1201)
 

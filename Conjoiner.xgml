@@ -8,32 +8,49 @@
 		<attribute key="directed" type="int">1</attribute>
 		<section name="node">
 			<attribute key="id" type="int">0</attribute>
-			<attribute key="label" type="String">Neuron</attribute>
+			<attribute key="label" type="String">ModBus</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">168.5</attribute>
-				<attribute key="y" type="double">320.0</attribute>
-				<attribute key="w" type="double">73.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">roundrectangle</attribute>
-				<attribute key="fill" type="String">#FFCC00</attribute>
+				<attribute key="x" type="double">734.3800000000001</attribute>
+				<attribute key="y" type="double">775.1</attribute>
+				<attribute key="w" type="double">445.34</attribute>
+				<attribute key="h" type="double">150.0</attribute>
+				<attribute key="customconfiguration" type="String">com.yworks.flowchart.directData</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">y.view.ShadowNodePainter.SHADOW_PAINTING</attribute>
+						<attribute key="valueClass" type="String">java.lang.Boolean</attribute>
+						<attribute key="value" type="String">true</attribute>
+					</section>
+				</section>
+				<attribute key="fill" type="String">#E8EEF7</attribute>
+				<attribute key="fill2" type="String">#B7C9E3</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Neuron</attribute>
+				<attribute key="text" type="String">ModBus</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
+			</section>
+			<section name="LabelGraphics">
 			</section>
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">1</attribute>
 			<attribute key="label" type="String"></attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">473.0</attribute>
-				<attribute key="y" type="double">137.0</attribute>
-				<attribute key="w" type="double">155.0</attribute>
+				<attribute key="x" type="double">919.9300000000001</attribute>
+				<attribute key="y" type="double">133.25000000000009</attribute>
+				<attribute key="w" type="double">836.7399999999998</attribute>
 				<attribute key="h" type="double">40.0</attribute>
 				<attribute key="customconfiguration" type="String">com.yworks.flowchart.directData</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">y.view.ShadowNodePainter.SHADOW_PAINTING</attribute>
+						<attribute key="valueClass" type="String">java.lang.Boolean</attribute>
+						<attribute key="value" type="String">true</attribute>
+					</section>
+				</section>
 				<attribute key="fill" type="String">#E8EEF7</attribute>
 				<attribute key="fill2" type="String">#B7C9E3</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
@@ -41,7 +58,7 @@
 			<section name="LabelGraphics">
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">BROADCAST_TOPIC</attribute>
+				<attribute key="text" type="String">Cluster EventBus</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
@@ -49,18 +66,29 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">2</attribute>
-			<attribute key="label" type="String">Impulse Message Class</attribute>
+			<attribute key="label" type="String"></attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">473.0</attribute>
-				<attribute key="y" type="double">504.0</attribute>
-				<attribute key="w" type="double">155.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">roundrectangle</attribute>
-				<attribute key="fill" type="String">#FFCC00</attribute>
+				<attribute key="x" type="double">916.6500000000002</attribute>
+				<attribute key="y" type="double">493.09999999999997</attribute>
+				<attribute key="w" type="double">80.79999999999973</attribute>
+				<attribute key="h" type="double">292.0000000000001</attribute>
+				<attribute key="customconfiguration" type="String">com.yworks.flowchart.process</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">y.view.ShadowNodePainter.SHADOW_PAINTING</attribute>
+						<attribute key="valueClass" type="String">java.lang.Boolean</attribute>
+						<attribute key="value" type="String">true</attribute>
+					</section>
+				</section>
+				<attribute key="fill" type="String">#E8EEF7</attribute>
+				<attribute key="fill2" type="String">#B7C9E3</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Impulse Message Class</attribute>
+			</section>
+			<section name="LabelGraphics">
+				<attribute key="text" type="String">Product 
+Deployer</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
@@ -68,18 +96,28 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">3</attribute>
-			<attribute key="label" type="String">Bcast Subscriber</attribute>
+			<attribute key="label" type="String"></attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">312.0</attribute>
-				<attribute key="y" type="double">245.0</attribute>
-				<attribute key="w" type="double">112.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">roundrectangle</attribute>
-				<attribute key="fill" type="String">#FFCC00</attribute>
+				<attribute key="x" type="double">799.3</attribute>
+				<attribute key="y" type="double">493.09999999999997</attribute>
+				<attribute key="w" type="double">80.79999999999973</attribute>
+				<attribute key="h" type="double">292.0000000000001</attribute>
+				<attribute key="customconfiguration" type="String">com.yworks.flowchart.process</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">y.view.ShadowNodePainter.SHADOW_PAINTING</attribute>
+						<attribute key="valueClass" type="String">java.lang.Boolean</attribute>
+						<attribute key="value" type="String">true</attribute>
+					</section>
+				</section>
+				<attribute key="fill" type="String">#E8EEF7</attribute>
+				<attribute key="fill2" type="String">#B7C9E3</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Bcast Subscriber</attribute>
+			</section>
+			<section name="LabelGraphics">
+				<attribute key="text" type="String">Monitoring</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
@@ -87,18 +125,28 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">4</attribute>
-			<attribute key="label" type="String">Hearbeat Timer</attribute>
+			<attribute key="label" type="String"></attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">633.0</attribute>
-				<attribute key="y" type="double">245.0</attribute>
-				<attribute key="w" type="double">112.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">roundrectangle</attribute>
-				<attribute key="fill" type="String">#FFCC00</attribute>
+				<attribute key="x" type="double">571.1500000000001</attribute>
+				<attribute key="y" type="double">493.09999999999997</attribute>
+				<attribute key="w" type="double">80.79999999999973</attribute>
+				<attribute key="h" type="double">292.0000000000001</attribute>
+				<attribute key="customconfiguration" type="String">com.yworks.flowchart.process</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">y.view.ShadowNodePainter.SHADOW_PAINTING</attribute>
+						<attribute key="valueClass" type="String">java.lang.Boolean</attribute>
+						<attribute key="value" type="String">true</attribute>
+					</section>
+				</section>
+				<attribute key="fill" type="String">#E8EEF7</attribute>
+				<attribute key="fill2" type="String">#B7C9E3</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Hearbeat Timer</attribute>
+			</section>
+			<section name="LabelGraphics">
+				<attribute key="text" type="String">Transponder</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
@@ -106,18 +154,17 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">5</attribute>
-			<attribute key="label" type="String">MessageHandler</attribute>
+			<attribute key="label" type="String">node</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">473.0</attribute>
-				<attribute key="y" type="double">396.0</attribute>
-				<attribute key="w" type="double">155.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">roundrectangle</attribute>
-				<attribute key="fill" type="String">#FFCC00</attribute>
+				<attribute key="x" type="double">1065.6976493835452</attribute>
+				<attribute key="y" type="double">375.21599922180167</attribute>
+				<attribute key="w" type="double">35.095298767089844</attribute>
+				<attribute key="h" type="double">56.231998443603516</attribute>
+				<attribute key="fill" type="String">#CCCCFF</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">MessageHandler</attribute>
+				<attribute key="text" type="String">node</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
@@ -125,18 +172,17 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">6</attribute>
-			<attribute key="label" type="String">Boot</attribute>
+			<attribute key="label" type="String">node</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">69.5</attribute>
-				<attribute key="y" type="double">437.0</attribute>
-				<attribute key="w" type="double">73.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">roundrectangle</attribute>
-				<attribute key="fill" type="String">#FFCC00</attribute>
+				<attribute key="x" type="double">1138.6329481506352</attribute>
+				<attribute key="y" type="double">375.21599922180167</attribute>
+				<attribute key="w" type="double">35.095298767089844</attribute>
+				<attribute key="h" type="double">56.231998443603516</attribute>
+				<attribute key="fill" type="String">#CCCCFF</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Boot</attribute>
+				<attribute key="text" type="String">node</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
@@ -144,18 +190,17 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">7</attribute>
-			<attribute key="label" type="String">Deploy Message Handler</attribute>
+			<attribute key="label" type="String">node</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">714.5</attribute>
-				<attribute key="y" type="double">369.0</attribute>
-				<attribute key="w" type="double">176.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">roundrectangle</attribute>
-				<attribute key="fill" type="String">#FFCC00</attribute>
+				<attribute key="x" type="double">1211.5682469177252</attribute>
+				<attribute key="y" type="double">375.21599922180167</attribute>
+				<attribute key="w" type="double">35.095298767089844</attribute>
+				<attribute key="h" type="double">56.231998443603516</attribute>
+				<attribute key="fill" type="String">#CCCCFF</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Deploy Message Handler</attribute>
+				<attribute key="text" type="String">node</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
@@ -163,224 +208,314 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">8</attribute>
-			<attribute key="label" type="String">Data Grid Message Handler</attribute>
+			<attribute key="label" type="String">node</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">714.5</attribute>
-				<attribute key="y" type="double">413.0</attribute>
-				<attribute key="w" type="double">176.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">roundrectangle</attribute>
-				<attribute key="fill" type="String">#FFCC00</attribute>
+				<attribute key="x" type="double">1284.5035456848152</attribute>
+				<attribute key="y" type="double">375.21599922180167</attribute>
+				<attribute key="w" type="double">35.095298767089844</attribute>
+				<attribute key="h" type="double">56.231998443603516</attribute>
+				<attribute key="fill" type="String">#CCCCFF</attribute>
 				<attribute key="outline" type="String">#000000</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Data Grid Message Handler</attribute>
+				<attribute key="text" type="String">node</attribute>
+				<attribute key="fontSize" type="int">12</attribute>
+				<attribute key="fontName" type="String">Dialog</attribute>
+				<attribute key="model"/>
+			</section>
+		</section>
+		<section name="node">
+			<attribute key="id" type="int">9</attribute>
+			<attribute key="label" type="String"></attribute>
+			<section name="graphics">
+				<attribute key="x" type="double">681.9499999999998</attribute>
+				<attribute key="y" type="double">493.09999999999997</attribute>
+				<attribute key="w" type="double">80.79999999999973</attribute>
+				<attribute key="h" type="double">292.0000000000001</attribute>
+				<attribute key="customconfiguration" type="String">com.yworks.flowchart.process</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">y.view.ShadowNodePainter.SHADOW_PAINTING</attribute>
+						<attribute key="valueClass" type="String">java.lang.Boolean</attribute>
+						<attribute key="value" type="String">true</attribute>
+					</section>
+				</section>
+				<attribute key="fill" type="String">#E8EEF7</attribute>
+				<attribute key="fill2" type="String">#B7C9E3</attribute>
+				<attribute key="outline" type="String">#000000</attribute>
+			</section>
+			<section name="LabelGraphics">
+			</section>
+			<section name="LabelGraphics">
+				<attribute key="text" type="String">Deployer</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
 				<attribute key="model"/>
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">0</attribute>
-			<attribute key="target" type="int">3</attribute>
+			<attribute key="source" type="int">1</attribute>
+			<attribute key="target" type="int">5</attribute>
+			<attribute key="label" type="String"></attribute>
 			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="sourceArrow" type="String">crows_foot_many</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">168.5</attribute>
-						<attribute key="y" type="double">320.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">312.0</attribute>
-						<attribute key="y" type="double">320.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">312.0</attribute>
-						<attribute key="y" type="double">245.0</attribute>
+				<attribute key="customconfiguration" type="String">com.yworks.bpmn.Connection</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">com.yworks.bpmn.type</attribute>
+						<attribute key="valueClass" type="String">B.A.B.A.A.b</attribute>
+						<attribute key="value" type="String">CONNECTION_TYPE_MESSAGE_FLOW</attribute>
 					</section>
 				</section>
+				<attribute key="style" type="String">dashed</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="sourceArrow" type="String">white_delta</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xSource" type="double">0.348418025631726</attribute>
+			</section>
+			<section name="LabelGraphics">
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">0</attribute>
-			<attribute key="target" type="int">4</attribute>
+			<attribute key="source" type="int">1</attribute>
+			<attribute key="target" type="int">6</attribute>
+			<attribute key="label" type="String"></attribute>
 			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="sourceArrow" type="String">crows_foot_many</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">168.5</attribute>
-						<attribute key="y" type="double">320.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">633.0</attribute>
-						<attribute key="y" type="double">320.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">633.0</attribute>
-						<attribute key="y" type="double">245.0</attribute>
+				<attribute key="customconfiguration" type="String">com.yworks.bpmn.Connection</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">com.yworks.bpmn.type</attribute>
+						<attribute key="valueClass" type="String">B.A.B.A.A.b</attribute>
+						<attribute key="value" type="String">CONNECTION_TYPE_MESSAGE_FLOW</attribute>
 					</section>
 				</section>
+				<attribute key="style" type="String">dashed</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="sourceArrow" type="String">white_delta</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xSource" type="double">0.5227500732620294</attribute>
+			</section>
+			<section name="LabelGraphics">
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">1</attribute>
+			<attribute key="target" type="int">7</attribute>
+			<attribute key="label" type="String"></attribute>
+			<section name="graphics">
+				<attribute key="customconfiguration" type="String">com.yworks.bpmn.Connection</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">com.yworks.bpmn.type</attribute>
+						<attribute key="valueClass" type="String">B.A.B.A.A.b</attribute>
+						<attribute key="value" type="String">CONNECTION_TYPE_MESSAGE_FLOW</attribute>
+					</section>
+				</section>
+				<attribute key="style" type="String">dashed</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="sourceArrow" type="String">white_delta</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xSource" type="double">0.6970821208923327</attribute>
+			</section>
+			<section name="LabelGraphics">
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">1</attribute>
+			<attribute key="target" type="int">8</attribute>
+			<attribute key="label" type="String"></attribute>
+			<section name="graphics">
+				<attribute key="customconfiguration" type="String">com.yworks.bpmn.Connection</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">com.yworks.bpmn.type</attribute>
+						<attribute key="valueClass" type="String">B.A.B.A.A.b</attribute>
+						<attribute key="value" type="String">CONNECTION_TYPE_MESSAGE_FLOW</attribute>
+					</section>
+				</section>
+				<attribute key="style" type="String">dashed</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="sourceArrow" type="String">white_delta</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xSource" type="double">0.8714141685226361</attribute>
+			</section>
+			<section name="LabelGraphics">
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">9</attribute>
+			<attribute key="target" type="int">1</attribute>
+			<attribute key="label" type="String">json message
+</attribute>
+			<section name="graphics">
+				<attribute key="customconfiguration" type="String">com.yworks.bpmn.Connection</attribute>
+				<section name="styleproperties">
+					<section name="property">
+						<attribute key="name" type="String">com.yworks.bpmn.type</attribute>
+						<attribute key="valueClass" type="String">B.A.B.A.A.b</attribute>
+						<attribute key="value" type="String">CONNECTION_TYPE_MESSAGE_FLOW</attribute>
+					</section>
+				</section>
+				<attribute key="style" type="String">dashed</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="sourceArrow" type="String">white_delta</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xSource" type="double">-0.004152632377883511</attribute>
+				<attribute key="ySource" type="double">-0.8065236285249624</attribute>
+				<attribute key="xTarget" type="double">-0.5692276366567077</attribute>
+				<attribute key="yTarget" type="double">0.40475502353554305</attribute>
+			</section>
+			<section name="LabelGraphics">
+				<attribute key="text" type="String">json message
+</attribute>
+				<attribute key="fill" type="String">#FFFFFF</attribute>
+				<attribute key="fontSize" type="int">12</attribute>
+				<attribute key="fontName" type="String">Dialog</attribute>
+				<attribute key="rotationAngle" type="double">270.0</attribute>
+				<attribute key="model" type="String">center_slider</attribute>
+				<attribute key="x" type="double">672.7158274019333</attribute>
+				<attribute key="y" type="double">208.524609375</attribute>
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">3</attribute>
+			<attribute key="target" type="int">4</attribute>
+			<attribute key="label" type="String">OS Status</attribute>
+			<section name="graphics">
+				<attribute key="width" type="int">3</attribute>
+				<attribute key="fill" type="String">#0000FF</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+				<section name="Line">
+					<section name="point">
+						<attribute key="x" type="double">799.3</attribute>
+						<attribute key="y" type="double">493.09999999999997</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">799.3</attribute>
+						<attribute key="y" type="double">732.8578276435616</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">591.1500000000001</attribute>
+						<attribute key="y" type="double">732.8578276435616</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">571.1500000000001</attribute>
+						<attribute key="y" type="double">493.09999999999997</attribute>
+					</section>
+				</section>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xTarget" type="double">0.4950495049504967</attribute>
+				<attribute key="yTarget" type="double">0.7312366768247466</attribute>
+			</section>
+			<section name="LabelGraphics">
+				<attribute key="text" type="String">OS Status</attribute>
+				<attribute key="fill" type="String">#0000FF</attribute>
+				<attribute key="color" type="String">#FFFF00</attribute>
+				<attribute key="fontSize" type="int">12</attribute>
+				<attribute key="fontName" type="String">Dialog</attribute>
+				<attribute key="model" type="String">centered</attribute>
+				<attribute key="position" type="String">center</attribute>
 			</section>
 		</section>
 		<section name="edge">
 			<attribute key="source" type="int">4</attribute>
 			<attribute key="target" type="int">1</attribute>
-			<attribute key="label" type="String">publish / send</attribute>
+			<attribute key="label" type="String">OS Status</attribute>
 			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="sourceArrow" type="String">standard</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">633.0</attribute>
-						<attribute key="y" type="double">245.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">633.0</attribute>
-						<attribute key="y" type="double">137.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">473.0</attribute>
-						<attribute key="y" type="double">137.0</attribute>
-					</section>
-				</section>
+				<attribute key="width" type="int">3</attribute>
+				<attribute key="fill" type="String">#0000FF</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xSource" type="double">0.5651252746581973</attribute>
+				<attribute key="ySource" type="double">-0.3216181681438647</attribute>
+				<attribute key="xTarget" type="double">-0.7752681571427419</attribute>
+				<attribute key="yTarget" type="double">0.324687372549792</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">publish / send</attribute>
+				<attribute key="text" type="String">OS Status</attribute>
+				<attribute key="fill" type="String">#0000FF</attribute>
+				<attribute key="color" type="String">#FFFF00</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="model"/>
-				<attribute key="position"/>
+				<attribute key="rotationAngle" type="double">270.0</attribute>
+				<attribute key="model" type="String">centered</attribute>
+				<attribute key="position" type="String">center</attribute>
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">3</attribute>
-			<attribute key="target" type="int">1</attribute>
-			<attribute key="label" type="String">subscribe</attribute>
+			<attribute key="source" type="int">1</attribute>
+			<attribute key="target" type="int">4</attribute>
+			<attribute key="label" type="String">New Deployment</attribute>
 			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="sourceArrow" type="String">standard</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">312.0</attribute>
-						<attribute key="y" type="double">245.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">312.0</attribute>
-						<attribute key="y" type="double">137.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">473.0</attribute>
-						<attribute key="y" type="double">137.0</attribute>
-					</section>
-				</section>
+				<attribute key="width" type="int">3</attribute>
+				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
+			</section>
+			<section name="edgeAnchor">
+				<attribute key="xSource" type="double">-0.8336639816430433</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">subscribe</attribute>
+				<attribute key="text" type="String">New Deployment</attribute>
+				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="color" type="String">#FFFF00</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="model"/>
-				<attribute key="position"/>
+				<attribute key="rotationAngle" type="double">270.0</attribute>
+				<attribute key="model" type="String">centered</attribute>
+				<attribute key="position" type="String">center</attribute>
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">5</attribute>
+			<attribute key="source" type="int">4</attribute>
 			<attribute key="target" type="int">2</attribute>
-			<attribute key="label" type="String">Impulse.toJson()</attribute>
+			<attribute key="label" type="String">New Deployment</attribute>
 			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-			</section>
-			<section name="LabelGraphics">
-				<attribute key="text" type="String">Impulse.toJson()</attribute>
-				<attribute key="fontSize" type="int">12</attribute>
-				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="model"/>
-				<attribute key="position"/>
-			</section>
-		</section>
-		<section name="edge">
-			<attribute key="source" type="int">3</attribute>
-			<attribute key="target" type="int">5</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="sourceArrow" type="String">crows_foot_many</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
+				<attribute key="width" type="int">3</attribute>
+				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="targetArrow" type="String">white_delta</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">312.0</attribute>
-						<attribute key="y" type="double">245.0</attribute>
+						<attribute key="x" type="double">571.1500000000001</attribute>
+						<attribute key="y" type="double">493.09999999999997</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">473.0</attribute>
-						<attribute key="y" type="double">245.0</attribute>
+						<attribute key="x" type="double">558.9930579787483</attribute>
+						<attribute key="y" type="double">752.8578276435616</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">473.0</attribute>
-						<attribute key="y" type="double">396.0</attribute>
+						<attribute key="x" type="double">890.321528989374</attribute>
+						<attribute key="y" type="double">752.8578276435616</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">916.6500000000002</attribute>
+						<attribute key="y" type="double">493.09999999999997</attribute>
 					</section>
 				</section>
 			</section>
 			<section name="edgeAnchor">
-				<attribute key="yTarget" type="double">0.06666666666666667</attribute>
-			</section>
-		</section>
-		<section name="edge">
-			<attribute key="source" type="int">6</attribute>
-			<attribute key="target" type="int">0</attribute>
-			<attribute key="label" type="String">Vertical Deploy</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">69.5</attribute>
-						<attribute key="y" type="double">437.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">69.5</attribute>
-						<attribute key="y" type="double">369.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">168.5</attribute>
-						<attribute key="y" type="double">369.0</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">168.5</attribute>
-						<attribute key="y" type="double">320.0</attribute>
-					</section>
-				</section>
-			</section>
-			<section name="edgeAnchor">
-				<attribute key="yTarget" type="double">0.8666666666666667</attribute>
+				<attribute key="xSource" type="double">-0.3009144064666292</attribute>
+				<attribute key="ySource" type="double">0.7855128606642864</attribute>
+				<attribute key="xTarget" type="double">-0.651694826995701</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">Vertical Deploy</attribute>
+				<attribute key="text" type="String">New Deployment</attribute>
+				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="color" type="String">#FFFF00</attribute>
 				<attribute key="fontSize" type="int">12</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="model"/>
-				<attribute key="position"/>
-			</section>
-		</section>
-		<section name="edge">
-			<attribute key="source" type="int">5</attribute>
-			<attribute key="target" type="int">7</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-			</section>
-		</section>
-		<section name="edge">
-			<attribute key="source" type="int">5</attribute>
-			<attribute key="target" type="int">8</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
+				<attribute key="model" type="String">centered</attribute>
+				<attribute key="position" type="String">center</attribute>
 			</section>
 		</section>
 	</section>
